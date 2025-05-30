@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+.animation{
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.car{
+  animation: car 5s ease-in-out infinite alternate;
+}
+@keyframes car {
+  from{
+  transform: translateX(200px) skewX(10deg);
+  }
+  30%{
+    transform: translateX(500px);
+  }
+  50%{
+    transform: translateX(450px);
+  }
+  to{
+    transform: translateX(690px);
+  }
+}
+  </style>
+</head>
+<body>
+<div class="animation">
+  <img class="car" src="img/car.png" alt="car">
+  <img class="road" src="img/road.png" alt="road">
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+.square{
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+  border-top: 25px solid red;
+  border-left: 25px solid blue;
+  border-right: 25px solid green;
+  border-bottom: 25px solid yellow;
+  animation: preloader 4s ease-in-out infinite alternate;
+}
+@keyframes  preloader {
+  from{
+  transform: rotate(-360deg) scale(1);
+  }
+  50%{
+   transform: rotate(360deg) scale(0.5);
+  }
+  to {
+    transform: rotate(-360deg) scale(1);
+
+  }
+}
+  </style>
+</head>
+<body>
+<div class="square"></div>
+</body>
+</html>
